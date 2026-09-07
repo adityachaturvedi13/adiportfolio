@@ -1,0 +1,132 @@
+{
+  "meta": {"siteUrl": "https://github.com/adityachaturvedi13", "calendarUrl": "", "email": "aditya13jsr@gmail.com"},
+  "socials": [
+    {"label": "GitHub", "href": "https://github.com/adityachaturvedi13", "icon": "github"},
+    {"label": "LinkedIn", "href": "https://www.linkedin.com/in/aditya-chaturvedi-cse", "icon": "linkedin"}
+  ],
+  "sections": [
+    {
+      "type": "hero",
+      "data": {
+        "image": "/aditya-chaturvedi.png",
+        "name": "Aditya Chaturvedi",
+        "phonetic": "",
+        "noun": "Computer Science Engineer · Data & Cloud Enthusiast",
+        "timezone": {"label": "IST", "tz": "Asia/Kolkata"},
+        "intro": [
+          "I am a Computer Science and Engineering student at Lovely Professional University with hands-on experience in data analysis, cloud engineering, observability, and full-stack development.",
+          "I enjoy turning real-world problems into practical software and data solutions—from multilingual AI-powered public health tools to business-focused sales analysis. I am especially interested in building reliable, accessible products with modern web, cloud, and data technologies."
+        ]
+      }
+    },
+    {
+      "type": "experience",
+      "title": "Experience",
+      "data": {
+        "featured": {
+          "name": "Broadridge Financial Solutions",
+          "link": "https://www.broadridge.com/",
+          "role": "DevOps Trainee (Cloud Engineering & Observability), On-Campus",
+          "dateRange": "June 2025 - August 2025",
+          "collapsedHeight": "max-h-48",
+          "body": [
+            "Trained in enterprise DevOps practices spanning CI/CD pipelines, release automation, cloud infrastructure, and production operations.",
+            {"list": [
+              "Gained hands-on exposure to Docker, Linux, Jira, and core operating-system and networking fundamentals.",
+              "Applied SRE and observability practices including monitoring, centralized logging, alerting, incident response, and root cause analysis.",
+              "Developed an understanding of reliability, scalability, security awareness, and Agile execution in a fintech environment."
+            ]}
+          ]
+        },
+        "previousLabel": "",
+        "previous": []
+      }
+    },
+    {
+      "type": "techStack",
+      "title": "Technical Skills",
+      "data": {"categories": [
+        {"name": "Languages", "skills": [
+          {"name": "Python", "slug": "python"}, {"name": "R", "slug": "r"},
+          {"name": "SQL", "slug": "mysql"}, {"name": "TypeScript", "slug": "typescript"}
+        ]},
+        {"name": "Frameworks & Libraries", "skills": [
+          {"name": "Next.js", "slug": "nextdotjs"}, {"name": "React", "slug": "react"},
+          {"name": "NumPy", "slug": "numpy"}, {"name": "Pandas", "slug": "pandas"},
+          {"name": "Matplotlib", "slug": "matplotlib"}, {"name": "Tailwind CSS", "slug": "tailwindcss"}
+        ]},
+        {"name": "Databases & Cloud", "skills": [
+          {"name": "MySQL", "slug": "mysql"}, {"name": "Supabase", "slug": "supabase"},
+          {"name": "AWS", "slug": "amazonwebservices"}
+        ]},
+        {"name": "Tools & Platforms", "skills": [
+          {"name": "Docker", "slug": "docker"}, {"name": "Terraform", "slug": "terraform"},
+          {"name": "Jenkins", "slug": "jenkins"}, {"name": "GitHub", "slug": "github"},
+          {"name": "Tableau", "slug": "tableau"}, {"name": "Linux", "slug": "linux"},
+          {"name": "Jira", "slug": "jira"}
+        ]}
+      ]}
+    },
+    {
+      "type": "project", "title": "Featured Project",
+      "data": {
+        "name": "ArogyaBot", "link": "https://github.com/adityachaturvedi13/ArogyaBot",
+        "subtitle": "AI-powered public health awareness chatbot",
+        "body": [
+          "A multilingual AI chatbot designed to make reliable public-health information more accessible while identifying health misinformation and urgent situations.",
+          {"list": [
+            "Integrated the Google Gemini API for context-aware conversations and natural-language health information processing.",
+            "Added misinformation correction, emergency keyword detection, immediate helpline responses, and location-aware healthcare recommendations.",
+            "Used Supabase PostgreSQL for anonymous sessions, persistent chat history, health myths, and healthcare resources.",
+            "Supports eight Indian regional languages in a responsive application deployed on Vercel."
+          ]},
+          "Stack: **Next.js**, **TypeScript**, **React**, **Zustand**, **Tailwind CSS**, **Supabase**, **REST APIs**, **Google Gemini API**."
+        ],
+        "footerLink": {"label": "Live demo", "url": "https://arogya-bot-phi.vercel.app/"}
+      }
+    },
+    {
+      "type": "project", "title": "Project",
+      "data": {
+        "name": "Walmart Sales Data Analysis", "subtitle": "Sales data analysis and business insights",
+        "body": [
+          "Analyzed Walmart sales data to identify high-performing branches, products, seasonal trends, and customer purchasing patterns.",
+          {"list": [
+            "Performed SQL-based data cleaning, data wrangling, feature engineering, and exploratory data analysis.",
+            "Produced actionable insights for sales strategy and inventory planning.",
+            "Evaluated the factors influencing sales performance across diverse store locations to support stronger business decisions."
+          ]},
+          "Stack: **SQL**, **Data Analysis**, **Feature Engineering**, **Exploratory Data Analysis**."
+        ]
+      }
+    },
+    {
+      "type": "education", "title": "Education",
+      "data": {"items": [
+        {"title": "Lovely Professional University, Punjab", "role": "Bachelor of Technology - Computer Science and Engineering", "body": ["September 2022 - Present · CGPA: 7.98"]},
+        {"title": "DAV Public School, Loni, Ghaziabad", "role": "Intermediate (Class 12)", "body": ["April 2020 - March 2021 · 85%"]},
+        {"title": "DAV Public School, Loni, Ghaziabad", "role": "Matriculation (Class 10)", "body": ["April 2018 - March 2019 · 85%"]}
+      ]}
+    },
+    {
+      "type": "expandableCard", "title": "Certifications",
+      "data": {
+        "heading": "Professional Learning", "collapsedHeight": "max-h-48",
+        "body": [{"list": [
+          "Data Analysis with Tableau — Coursera", "Cloud Computing — NPTEL", "R Programming — Coursera",
+          "Hands-on Introduction to Linux Commands and Shell Scripting — Coursera"
+        ]}]
+      }
+    },
+    {"type": "github", "title": "GitHub Contributions", "data": {"username": "adityachaturvedi13"}},
+    {
+      "type": "contact", "title": "Get in Touch",
+      "data": {
+        "heading": "Let's build something meaningful",
+        "subheading": "Open to software, data, cloud, and DevOps opportunities, collaborations, and conversations.",
+        "ctas": [{"label": "Email me", "href": "mailto:aditya13jsr@gmail.com", "icon": "mail", "primary": true}],
+        "socialsLabel": "Find me on"
+      }
+    }
+  ]
+}

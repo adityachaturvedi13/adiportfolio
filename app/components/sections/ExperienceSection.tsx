@@ -1,0 +1,73 @@
+import { SectionShell } from "../SectionShell";
+import { Collapsible } from "../Collapsible";
+import { RichText } from "../RichText";
+import { ExpandableExperienceItem } from "../ExpandableExperienceItem";
+import type { Block } from "../types";
+
+export interface ExperienceEntry {
+  name: string;
+  role: string;
+  link?: string;
+  /** Optional date range — surfaced in the generated agent-mode markdown. */
+  dateRange?: string;
+  collapsedHeight?: string;
+  body: Block[];
+}
+
+export interface ExperienceData {
+  featured: ExperienceEntry;
+  previousLabel: string;
+  previous: ExperienceEntry[];
+}
+
+export function ExperienceSection({ title, data }: { title: string; data: ExperienceData }) {
+  const { featured, previousLabel, previous } = data;
+
+  return (
+    <SectionShell title={title} className="mt-6">
+      {/* Featured / Current role */}
+      <div className="rounded-xl border border-gray-200 dark:border-gray-800 p-6 sm:p-8">
+        <div className="mb-6 flex flex-wrap items-center gap-x-3 gap-y-1">
+          {featured.link ? (
+            <a
+              href={featured.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg font-semibold text-black dark:text-white underline underline-offset-4 decoration-gray-300 dark:decoration-gray-700 hover:decoration-black dark:hover:decoration-white transition-colors"
+            >
+              {featured.name}
+            </a>
+          ) : (
+            <span className="text-lg font-semibold text-black dark:text-white">{featured.name}</span>
+          )}
+          <span className="text-xs font-medium text-gray-500 dark:text-gray-500">{featured.role}</span>
+        </div>
+
+        <Collapsible
+          collapsedHeight={featured.collapsedHeight ?? "max-h-48"}
+          className="space-y-3 text-base leading-relaxed text-gray-600 dark:text-gray-400"
+        >
+          <RichText blocks={featured.body} />
+        </Collapsible>
+      </div>
+
+      {previous.length > 0 && (
+        /* Previously — compact titles, expand on click */
+        <div className="mt-10">
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-600">
+            {previousLabel}
+          </h3>
+          <div className="flex flex-col gap-1 rounded-xl border border-gray-200 dark:border-gray-800 px-6 py-2 sm:px-8 sm:py-3">
+            {previous.map((item) => (
+              <ExpandableExperienceItem key={item.name} title={item.name} role={item.role} link={item.link}>
+                <div className="space-y-2">
+                  <RichText blocks={item.body} />
+                </div>
+              </ExpandableExperienceItem>
+            ))}
+          </div>
+        </div>
+      )}
+    </SectionShell>
+  );
+}
